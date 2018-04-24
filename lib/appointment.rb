@@ -4,6 +4,6 @@ class Appointment
   def initiialize(date, patient)
     @date = date
     @patient = patient
-    patient.add_song(self)
+    patient.add_appointment(self)
   end
 end
