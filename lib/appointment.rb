@@ -1,0 +1,9 @@
+class Appointment
+  attr_accessor :name, :artist, :genre
+  
+  def initiialize(name, genre)
+    @name = name
+    @genre = genre
+    genre.add_song(self)
+  end
+end
