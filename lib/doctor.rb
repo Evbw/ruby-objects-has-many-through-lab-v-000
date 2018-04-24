@@ -11,7 +11,7 @@ class Doctor
     appointment.artist = self
   end
   
-  def appontments
+  def appointments
     @appointments
   end
   
