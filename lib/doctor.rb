@@ -3,21 +3,21 @@ class Doctor
   
   def initialize(name)
     @name = name
-    @songs = []
+    @appointments = []
   end
   
-  def add_song(song)
-    @songs << song
-    song.artist = self
+  def add_song(appointment)
+    @appointments << appointment
+    appointment.artist = self
   end
   
-  def songs
-    @songs
+  def appontments
+    @appointments
   end
   
   def genres
-    self.songs.collect do |song|
-      song.genre
+    self.appointments.collect do |appointment|
+      appointment.genre
     end
   end
 end
