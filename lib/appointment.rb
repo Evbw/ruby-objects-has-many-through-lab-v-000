@@ -1,5 +1,5 @@
 class Appointment
-  attr_accessor :name, :artist, :genre
+  attr_accessor :name, :doctor, :genre
   
   def initiialize(name, genre)
     @name = name
