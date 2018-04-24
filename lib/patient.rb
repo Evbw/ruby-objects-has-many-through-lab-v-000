@@ -14,7 +14,7 @@ class Patient
     @appointments
   end
   
-  def artists
+  def doctors
     @appointments.collect do | appointment |
       appointment.doctor
     end
