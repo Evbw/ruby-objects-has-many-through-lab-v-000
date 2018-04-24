@@ -15,9 +15,9 @@ class Doctor
     @appointments
   end
   
-  def genres
+  def patients
     self.appointments.collect do |appointment|
-      appointment.genre
+      appointment.patient
     end
   end
 end
